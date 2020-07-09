@@ -66,7 +66,7 @@ class Base extends Component {
 
   constructor(props) {
     super(props);
-
+    console.log("constructor",props);
     this.state = {
       loading: false,
       meetingExisted: false,
@@ -197,6 +197,7 @@ class Base extends Component {
   }
 
   render() {
+    console.log("Base",this.props);
     const { updateLoadingState } = this;
     const { locale, meetingExist } = this.props;
     const stateControls = { updateLoadingState };

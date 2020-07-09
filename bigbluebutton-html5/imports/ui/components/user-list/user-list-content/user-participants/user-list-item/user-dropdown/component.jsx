@@ -640,9 +640,11 @@ class UserDropdown extends PureComponent {
           style={{
             visibility: dropdownVisible ? 'visible' : 'hidden',
             [dropdownDirection]: `${dropdownOffset}px`,
+            transform: 'translateX(-100%)',
+
           }}
           className={styles.dropdownContent}
-          placement={`right ${dropdownDirection}`}
+          placement={`left ${dropdownDirection}`}
         >
           <DropdownList
             ref={(ref) => { this.list = ref; }}

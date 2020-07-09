@@ -51,6 +51,7 @@ const endMeeting = (code) => {
 };
 
 const AppContainer = (props) => {
+  console.log(props)
   const {
     navbar,
     actionsbar,

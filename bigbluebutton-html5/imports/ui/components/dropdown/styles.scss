@@ -348,7 +348,7 @@
 .left-top, [dir="rtl"] .right-top {
   @extend %right-caret;
   @extend %vert-top-caret;
-  transform: translateX(-100%) translateY(0);
+  transform: translateX(-22%) translateY(0);
 }
 
 .left-bottom {
